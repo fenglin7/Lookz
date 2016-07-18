@@ -13,9 +13,25 @@
 		51173C941D2E4DAE00700B08 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51173C921D2E4DAE00700B08 /* Main.storyboard */; };
 		51173C961D2E4DAE00700B08 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 51173C951D2E4DAE00700B08 /* Assets.xcassets */; };
 		51173C991D2E4DAE00700B08 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51173C971D2E4DAE00700B08 /* LaunchScreen.storyboard */; };
+		51B5C53E1D37A0800007C57A /* PhotoOverlayViewControllerTemplate.xib in Resources */ = {isa = PBXBuildFile; fileRef = 51B5C53D1D37A0800007C57A /* PhotoOverlayViewControllerTemplate.xib */; };
+		51B5C5401D37A2F40007C57A /* CustomOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51B5C53F1D37A2F40007C57A /* CustomOverlayView.swift */; };
+		51C926481D3CAA6F00C638A8 /* AddPhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51C926471D3CAA6F00C638A8 /* AddPhotoViewController.swift */; };
+		51E9BA4C1D349C1600CED8A3 /* PhotoTakingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51E9BA4B1D349C1600CED8A3 /* PhotoTakingViewController.swift */; };
+		51E9BA4F1D349D8600CED8A3 /* WardrobeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51E9BA4E1D349D8600CED8A3 /* WardrobeViewController.swift */; };
+		51E9BA511D349DB000CED8A3 /* LookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51E9BA501D349DB000CED8A3 /* LookViewController.swift */; };
+		51E9BA551D349DF600CED8A3 /* ParseHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51E9BA521D349DF600CED8A3 /* ParseHelper.swift */; };
+		51E9BA561D349DF600CED8A3 /* ErrorHandling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51E9BA531D349DF600CED8A3 /* ErrorHandling.swift */; };
+		51E9BA571D349DF600CED8A3 /* ParseLoginHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51E9BA541D349DF600CED8A3 /* ParseLoginHelper.swift */; };
+		51E9BA591D349E2B00CED8A3 /* PhotoTakingHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51E9BA581D349E2B00CED8A3 /* PhotoTakingHelper.swift */; };
+		51E9BA5B1D34AD6C00CED8A3 /* ClothingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51E9BA5A1D34AD6C00CED8A3 /* ClothingTableViewCell.swift */; };
+		51E9BA5D1D34ADC600CED8A3 /* Clothing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51E9BA5C1D34ADC600CED8A3 /* Clothing.swift */; };
+		51E9BA611D351A4D00CED8A3 /* PhotoOverlayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51E9BA601D351A4D00CED8A3 /* PhotoOverlayViewController.swift */; };
+		5C7F392DCD61CD5722CF35CF /* Pods_Lookz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27746E1C7B190DFDAA794567 /* Pods_Lookz.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		27746E1C7B190DFDAA794567 /* Pods_Lookz.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Lookz.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		507D7A98B5FB23EB1954AFE1 /* Pods-Lookz.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lookz.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Lookz/Pods-Lookz.debug.xcconfig"; sourceTree = "<group>"; };
 		51173C891D2E4DAD00700B08 /* Lookz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lookz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		51173C8C1D2E4DAE00700B08 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		51173C8E1D2E4DAE00700B08 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +40,20 @@
 		51173C951D2E4DAE00700B08 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		51173C981D2E4DAE00700B08 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		51173C9A1D2E4DAE00700B08 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		51B5C53D1D37A0800007C57A /* PhotoOverlayViewControllerTemplate.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PhotoOverlayViewControllerTemplate.xib; path = ../PhotoOverlayViewControllerTemplate.xib; sourceTree = "<group>"; };
+		51B5C53F1D37A2F40007C57A /* CustomOverlayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomOverlayView.swift; sourceTree = "<group>"; };
+		51C926471D3CAA6F00C638A8 /* AddPhotoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddPhotoViewController.swift; sourceTree = "<group>"; };
+		51E9BA4B1D349C1600CED8A3 /* PhotoTakingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoTakingViewController.swift; sourceTree = "<group>"; };
+		51E9BA4E1D349D8600CED8A3 /* WardrobeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WardrobeViewController.swift; path = ../WardrobeViewController.swift; sourceTree = "<group>"; };
+		51E9BA501D349DB000CED8A3 /* LookViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LookViewController.swift; path = ../LookViewController.swift; sourceTree = "<group>"; };
+		51E9BA521D349DF600CED8A3 /* ParseHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParseHelper.swift; sourceTree = "<group>"; };
+		51E9BA531D349DF600CED8A3 /* ErrorHandling.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorHandling.swift; sourceTree = "<group>"; };
+		51E9BA541D349DF600CED8A3 /* ParseLoginHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParseLoginHelper.swift; sourceTree = "<group>"; };
+		51E9BA581D349E2B00CED8A3 /* PhotoTakingHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoTakingHelper.swift; sourceTree = "<group>"; };
+		51E9BA5A1D34AD6C00CED8A3 /* ClothingTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClothingTableViewCell.swift; sourceTree = "<group>"; };
+		51E9BA5C1D34ADC600CED8A3 /* Clothing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Clothing.swift; sourceTree = "<group>"; };
+		51E9BA601D351A4D00CED8A3 /* PhotoOverlayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PhotoOverlayViewController.swift; path = ../PhotoOverlayViewController.swift; sourceTree = "<group>"; };
+		B17DA9DAF202192E0DB8A603 /* Pods-Lookz.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lookz.release.xcconfig"; path = "Pods/Target Support Files/Pods-Lookz/Pods-Lookz.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +61,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C7F392DCD61CD5722CF35CF /* Pods_Lookz.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4CC28401B406DA3125A25C18 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				507D7A98B5FB23EB1954AFE1 /* Pods-Lookz.debug.xcconfig */,
+				B17DA9DAF202192E0DB8A603 /* Pods-Lookz.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		51173C801D2E4DAD00700B08 = {
 			isa = PBXGroup;
 			children = (
 				51173C8B1D2E4DAE00700B08 /* Lookz */,
 				51173C8A1D2E4DAD00700B08 /* Products */,
+				4CC28401B406DA3125A25C18 /* Pods */,
+				C1BC8BD52B1D211B6C1A03C8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,6 +98,10 @@
 		51173C8B1D2E4DAE00700B08 /* Lookz */ = {
 			isa = PBXGroup;
 			children = (
+				51E9BA4D1D349C2800CED8A3 /* Helpers */,
+				51E9BA4A1D349C1600CED8A3 /* ViewControllers */,
+				51E9BA491D349C0E00CED8A3 /* Views */,
+				51E9BA451D349B2E00CED8A3 /* Model */,
 				51173C8C1D2E4DAE00700B08 /* AppDelegate.swift */,
 				51173C8E1D2E4DAE00700B08 /* FirstViewController.swift */,
 				51173C901D2E4DAE00700B08 /* SecondViewController.swift */,
@@ -67,6 +113,79 @@
 			path = Lookz;
 			sourceTree = "<group>";
 		};
+		51C926441D3CAA1300C638A8 /* PhotoTakingVC */ = {
+			isa = PBXGroup;
+			children = (
+				51B5C53D1D37A0800007C57A /* PhotoOverlayViewControllerTemplate.xib */,
+				51E9BA601D351A4D00CED8A3 /* PhotoOverlayViewController.swift */,
+				51C926471D3CAA6F00C638A8 /* AddPhotoViewController.swift */,
+			);
+			path = PhotoTakingVC;
+			sourceTree = "<group>";
+		};
+		51C926451D3CAA1C00C638A8 /* WardrobeVC */ = {
+			isa = PBXGroup;
+			children = (
+				51E9BA4E1D349D8600CED8A3 /* WardrobeViewController.swift */,
+			);
+			path = WardrobeVC;
+			sourceTree = "<group>";
+		};
+		51C926461D3CAA2500C638A8 /* LooksVC */ = {
+			isa = PBXGroup;
+			children = (
+				51E9BA501D349DB000CED8A3 /* LookViewController.swift */,
+			);
+			path = LooksVC;
+			sourceTree = "<group>";
+		};
+		51E9BA451D349B2E00CED8A3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				51E9BA5C1D34ADC600CED8A3 /* Clothing.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		51E9BA491D349C0E00CED8A3 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				51E9BA5A1D34AD6C00CED8A3 /* ClothingTableViewCell.swift */,
+				51B5C53F1D37A2F40007C57A /* CustomOverlayView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		51E9BA4A1D349C1600CED8A3 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				51C926461D3CAA2500C638A8 /* LooksVC */,
+				51C926451D3CAA1C00C638A8 /* WardrobeVC */,
+				51C926441D3CAA1300C638A8 /* PhotoTakingVC */,
+				51E9BA4B1D349C1600CED8A3 /* PhotoTakingViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		51E9BA4D1D349C2800CED8A3 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				51E9BA581D349E2B00CED8A3 /* PhotoTakingHelper.swift */,
+				51E9BA521D349DF600CED8A3 /* ParseHelper.swift */,
+				51E9BA531D349DF600CED8A3 /* ErrorHandling.swift */,
+				51E9BA541D349DF600CED8A3 /* ParseLoginHelper.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		C1BC8BD52B1D211B6C1A03C8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				27746E1C7B190DFDAA794567 /* Pods_Lookz.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +193,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 51173C9D1D2E4DAE00700B08 /* Build configuration list for PBXNativeTarget "Lookz" */;
 			buildPhases = (
+				E48207651F7AA6B30D57FC35 /* [CP] Check Pods Manifest.lock */,
 				51173C851D2E4DAD00700B08 /* Sources */,
 				51173C861D2E4DAD00700B08 /* Frameworks */,
 				51173C871D2E4DAD00700B08 /* Resources */,
+				0A06E576511B8B8DFF6C4346 /* [CP] Embed Pods Frameworks */,
+				13BCBAC922EDDCE745041D7B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -128,11 +250,60 @@
 			files = (
 				51173C991D2E4DAE00700B08 /* LaunchScreen.storyboard in Resources */,
 				51173C961D2E4DAE00700B08 /* Assets.xcassets in Resources */,
+				51B5C53E1D37A0800007C57A /* PhotoOverlayViewControllerTemplate.xib in Resources */,
 				51173C941D2E4DAE00700B08 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0A06E576511B8B8DFF6C4346 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Lookz/Pods-Lookz-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		13BCBAC922EDDCE745041D7B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Lookz/Pods-Lookz-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E48207651F7AA6B30D57FC35 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		51173C851D2E4DAD00700B08 /* Sources */ = {
@@ -140,7 +311,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				51173C911D2E4DAE00700B08 /* SecondViewController.swift in Sources */,
+				51E9BA5D1D34ADC600CED8A3 /* Clothing.swift in Sources */,
+				51B5C5401D37A2F40007C57A /* CustomOverlayView.swift in Sources */,
+				51E9BA511D349DB000CED8A3 /* LookViewController.swift in Sources */,
+				51E9BA551D349DF600CED8A3 /* ParseHelper.swift in Sources */,
+				51E9BA4F1D349D8600CED8A3 /* WardrobeViewController.swift in Sources */,
+				51E9BA4C1D349C1600CED8A3 /* PhotoTakingViewController.swift in Sources */,
+				51C926481D3CAA6F00C638A8 /* AddPhotoViewController.swift in Sources */,
+				51E9BA5B1D34AD6C00CED8A3 /* ClothingTableViewCell.swift in Sources */,
+				51E9BA561D349DF600CED8A3 /* ErrorHandling.swift in Sources */,
+				51E9BA591D349E2B00CED8A3 /* PhotoTakingHelper.swift in Sources */,
+				51E9BA611D351A4D00CED8A3 /* PhotoOverlayViewController.swift in Sources */,
 				51173C8D1D2E4DAE00700B08 /* AppDelegate.swift in Sources */,
+				51E9BA571D349DF600CED8A3 /* ParseLoginHelper.swift in Sources */,
 				51173C8F1D2E4DAE00700B08 /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -252,6 +435,7 @@
 		};
 		51173C9E1D2E4DAE00700B08 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 507D7A98B5FB23EB1954AFE1 /* Pods-Lookz.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -264,6 +448,7 @@
 		};
 		51173C9F1D2E4DAE00700B08 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B17DA9DAF202192E0DB8A603 /* Pods-Lookz.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -293,6 +478,7 @@
 				51173C9F1D2E4DAE00700B08 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

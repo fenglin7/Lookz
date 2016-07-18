@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PhotoOverlayViewController" customModule="Lookz" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="iN0-l3-epB" id="ydM-Tn-Uev"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view opaque="NO" contentMode="scaleAspectFit" id="iN0-l3-epB" customClass="CustomOverlayView" customModule="Lookz" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="vBi-oI-SH8">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <subviews>
+                        <imageView opaque="NO" userInteractionEnabled="NO" alpha="0.5" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mask3" translatesAutoresizingMaskIntoConstraints="NO" id="V4w-FB-piz">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="447"/>
+                        </imageView>
+                        <view alpha="0.65000000000000002" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="G74-tN-MB4">
+                            <rect key="frame" x="0.0" y="447" width="320" height="121"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="1Mt-9m-EIq">
+                                    <rect key="frame" x="64" y="37" width="192" height="44"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Me6-fw-rvg">
+                                            <rect key="frame" x="0.0" y="0.0" width="44" height="44"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="44" id="Up0-dU-10C"/>
+                                                <constraint firstAttribute="width" constant="44" id="YVC-75-35b"/>
+                                            </constraints>
+                                            <state key="normal" title="Top">
+                                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="changeTop:" destination="iN0-l3-epB" eventType="touchUpInside" id="ovk-0l-9VO"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BcP-85-r2M">
+                                            <rect key="frame" x="74" y="0.0" width="44" height="44"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="44" id="Vjf-5k-8lc"/>
+                                                <constraint firstAttribute="height" constant="44" id="uNC-QB-f0c"/>
+                                            </constraints>
+                                            <state key="normal" title="Pants">
+                                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="changePants:" destination="iN0-l3-epB" eventType="touchUpInside" id="IUu-3a-jLX"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tEB-7Y-buT">
+                                            <rect key="frame" x="148" y="0.0" width="44" height="44"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="44" id="Chb-kr-Bpg"/>
+                                                <constraint firstAttribute="height" constant="44" id="pyt-kk-Bry"/>
+                                            </constraints>
+                                            <state key="normal" title="Skirt">
+                                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="changeSkirt:" destination="iN0-l3-epB" eventType="touchUpInside" id="4Bu-Nd-TQf"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                </stackView>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstItem="1Mt-9m-EIq" firstAttribute="centerX" secondItem="G74-tN-MB4" secondAttribute="centerX" id="NrU-eh-zV4"/>
+                                <constraint firstAttribute="bottom" secondItem="1Mt-9m-EIq" secondAttribute="bottom" constant="40" id="SHF-Wk-WEr"/>
+                                <constraint firstItem="1Mt-9m-EIq" firstAttribute="top" secondItem="G74-tN-MB4" secondAttribute="top" constant="37" id="sVV-rO-1zM"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <accessibility key="accessibilityConfiguration">
+                <accessibilityTraits key="traits" adjustable="YES"/>
+            </accessibility>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="vBi-oI-SH8" secondAttribute="bottom" id="7yd-oX-qmz"/>
+                <constraint firstItem="vBi-oI-SH8" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="QgR-6g-0Ky"/>
+                <constraint firstItem="vBi-oI-SH8" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="dYe-RS-Ze4"/>
+                <constraint firstAttribute="trailing" secondItem="vBi-oI-SH8" secondAttribute="trailing" id="x5A-IZ-Oo5"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+            <connections>
+                <outlet property="overlayImageView" destination="V4w-FB-piz" id="fd7-vs-8td"/>
+            </connections>
+            <point key="canvasLocation" x="298" y="-2"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="mask3" width="200" height="200"/>
+    </resources>
+</document>
