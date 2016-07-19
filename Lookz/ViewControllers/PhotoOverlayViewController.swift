@@ -14,6 +14,7 @@ class PhotoOverlayViewController: UIViewController, UIImagePickerControllerDeleg
     @IBOutlet weak var imageOutput: UIImageView!
     let imagePicker = UIImagePickerController()
     var maskingImage = UIImage(named: "mask2.png")
+    var clothingType = "Top"
     
 //    let nc = NSNotificationCenter.defaultCenter()
 
@@ -139,15 +140,18 @@ class PhotoOverlayViewController: UIViewController, UIImagePickerControllerDeleg
     //MARK: Custom View Delegates
     func didChangeTop(overlayView:CustomOverlayView) {
         maskingImage = UIImage(named: "mask2.png")
+        clothingType = "Top"
         print("Change TOP")
     }
     
     func didChangePants(overlayView:CustomOverlayView) {
         maskingImage = UIImage(named: "mask3.png")
+        clothingType = "Top"
         print("Change Pants")
     }
     func didChangeSkirt(overlayView:CustomOverlayView) {
         maskingImage = UIImage(named: "mask4.png")
+        clothingType = "Top"
         print("Change Skirt")
     }
 
@@ -177,8 +181,16 @@ class PhotoOverlayViewController: UIViewController, UIImagePickerControllerDeleg
             var destinationVC = segue.destinationViewController as! AddPhotoViewController
 
             destinationVC.imageToSave = self.imageOutput.image
+            destinationVC.clothingType = clothingType
             
         }
+        
+    }
+    
+    @IBAction func unwindToPhotoOverlayViewController(segue: UIStoryboardSegue) {
+        
+        // for now, simply defining the method is sufficient.
+        // we'll add code later
         
     }
     

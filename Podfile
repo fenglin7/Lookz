@@ -12,5 +12,6 @@ target 'Lookz' do
   pod 'ParseFacebookUtilsV4'
   pod 'ParseUI'
   pod 'DateTools'
+  pod 'RealmSwift'
 
 end
