@@ -16,6 +16,7 @@ class Clothing: Object {
     dynamic var name = ""
     dynamic var type = ""
     dynamic var photo = NSData()
+    dynamic var modificationTime = NSDate()
 
 }
 

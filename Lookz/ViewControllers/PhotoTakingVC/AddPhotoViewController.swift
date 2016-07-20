@@ -44,10 +44,11 @@ class AddPhotoViewController: UIViewController, UITextViewDelegate {
         if textView.textColor == UIColor.lightGrayColor() {
             textView.text = nil
             textView.textColor = UIColor.blackColor()
-            textView.becomeFirstResponder()
-            var scrollPoint : CGPoint = CGPointMake(0, self.imageNameTextView.frame.origin.y)
-            self.scrollView.setContentOffset(scrollPoint, animated: true)
         }
+        textView.becomeFirstResponder()
+        var scrollPoint : CGPoint = CGPointMake(0, self.imageNameTextView.frame.origin.y)
+        self.scrollView.setContentOffset(scrollPoint, animated: true)
+
     }
     
     func textViewDidEndEditing(textView: UITextView) {
@@ -71,10 +72,11 @@ class AddPhotoViewController: UIViewController, UITextViewDelegate {
             if let imageToSavePNG = UIImagePNGRepresentation(imageToSave){
                 clothing.photo = imageToSavePNG
             }
-            //RealmHelper.addClothing(clothing)
             
-            // 3
-            //listNotesTableViewController.notes = RealmHelper.retrieveNotes()
+            clothing.modificationTime = NSDate()
+
+            RealmHelper.addClothing(clothing)
+            
         }
     }
     

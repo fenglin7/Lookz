@@ -146,12 +146,12 @@ class PhotoOverlayViewController: UIViewController, UIImagePickerControllerDeleg
     
     func didChangePants(overlayView:CustomOverlayView) {
         maskingImage = UIImage(named: "mask3.png")
-        clothingType = "Top"
+        clothingType = "Pants"
         print("Change Pants")
     }
     func didChangeSkirt(overlayView:CustomOverlayView) {
         maskingImage = UIImage(named: "mask4.png")
-        clothingType = "Top"
+        clothingType = "Skirt"
         print("Change Skirt")
     }
 

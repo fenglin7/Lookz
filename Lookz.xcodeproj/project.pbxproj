@@ -17,6 +17,9 @@
 		51B5C5401D37A2F40007C57A /* CustomOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51B5C53F1D37A2F40007C57A /* CustomOverlayView.swift */; };
 		51C926481D3CAA6F00C638A8 /* AddPhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51C926471D3CAA6F00C638A8 /* AddPhotoViewController.swift */; };
 		51D9CA791D3DCC1100CF5839 /* RealmHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D9CA781D3DCC1100CF5839 /* RealmHelper.swift */; };
+		51D9CA7C1D3E102800CF5839 /* NSDate+convertToString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D9CA7B1D3E102800CF5839 /* NSDate+convertToString.swift */; };
+		51D9CA7E1D3F4D6900CF5839 /* ClothingItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D9CA7D1D3F4D6900CF5839 /* ClothingItemViewController.swift */; };
+		51D9CA801D3F56B400CF5839 /* LookzCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D9CA7F1D3F56B400CF5839 /* LookzCollectionViewController.swift */; };
 		51E9BA4C1D349C1600CED8A3 /* PhotoTakingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51E9BA4B1D349C1600CED8A3 /* PhotoTakingViewController.swift */; };
 		51E9BA4F1D349D8600CED8A3 /* WardrobeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51E9BA4E1D349D8600CED8A3 /* WardrobeViewController.swift */; };
 		51E9BA511D349DB000CED8A3 /* LookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51E9BA501D349DB000CED8A3 /* LookViewController.swift */; };
@@ -45,6 +48,9 @@
 		51B5C53F1D37A2F40007C57A /* CustomOverlayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomOverlayView.swift; sourceTree = "<group>"; };
 		51C926471D3CAA6F00C638A8 /* AddPhotoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddPhotoViewController.swift; sourceTree = "<group>"; };
 		51D9CA781D3DCC1100CF5839 /* RealmHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmHelper.swift; sourceTree = "<group>"; };
+		51D9CA7B1D3E102800CF5839 /* NSDate+convertToString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSDate+convertToString.swift"; sourceTree = "<group>"; };
+		51D9CA7D1D3F4D6900CF5839 /* ClothingItemViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClothingItemViewController.swift; sourceTree = "<group>"; };
+		51D9CA7F1D3F56B400CF5839 /* LookzCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LookzCollectionViewController.swift; sourceTree = "<group>"; };
 		51E9BA4B1D349C1600CED8A3 /* PhotoTakingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoTakingViewController.swift; sourceTree = "<group>"; };
 		51E9BA4E1D349D8600CED8A3 /* WardrobeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WardrobeViewController.swift; path = ../WardrobeViewController.swift; sourceTree = "<group>"; };
 		51E9BA501D349DB000CED8A3 /* LookViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LookViewController.swift; path = ../LookViewController.swift; sourceTree = "<group>"; };
@@ -100,6 +106,7 @@
 		51173C8B1D2E4DAE00700B08 /* Lookz */ = {
 			isa = PBXGroup;
 			children = (
+				51D9CA7A1D3E100500CF5839 /* Extensions */,
 				51E9BA4D1D349C2800CED8A3 /* Helpers */,
 				51E9BA4A1D349C1600CED8A3 /* ViewControllers */,
 				51E9BA491D349C0E00CED8A3 /* Views */,
@@ -129,6 +136,7 @@
 			isa = PBXGroup;
 			children = (
 				51E9BA4E1D349D8600CED8A3 /* WardrobeViewController.swift */,
+				51D9CA7D1D3F4D6900CF5839 /* ClothingItemViewController.swift */,
 			);
 			path = WardrobeVC;
 			sourceTree = "<group>";
@@ -137,8 +145,17 @@
 			isa = PBXGroup;
 			children = (
 				51E9BA501D349DB000CED8A3 /* LookViewController.swift */,
+				51D9CA7F1D3F56B400CF5839 /* LookzCollectionViewController.swift */,
 			);
 			path = LooksVC;
+			sourceTree = "<group>";
+		};
+		51D9CA7A1D3E100500CF5839 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				51D9CA7B1D3E102800CF5839 /* NSDate+convertToString.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		51E9BA451D349B2E00CED8A3 /* Model */ = {
@@ -323,8 +340,11 @@
 				51C926481D3CAA6F00C638A8 /* AddPhotoViewController.swift in Sources */,
 				51E9BA5B1D34AD6C00CED8A3 /* ClothingTableViewCell.swift in Sources */,
 				51E9BA561D349DF600CED8A3 /* ErrorHandling.swift in Sources */,
+				51D9CA7E1D3F4D6900CF5839 /* ClothingItemViewController.swift in Sources */,
 				51E9BA591D349E2B00CED8A3 /* PhotoTakingHelper.swift in Sources */,
 				51E9BA611D351A4D00CED8A3 /* PhotoOverlayViewController.swift in Sources */,
+				51D9CA7C1D3E102800CF5839 /* NSDate+convertToString.swift in Sources */,
+				51D9CA801D3F56B400CF5839 /* LookzCollectionViewController.swift in Sources */,
 				51173C8D1D2E4DAE00700B08 /* AppDelegate.swift in Sources */,
 				51D9CA791D3DCC1100CF5839 /* RealmHelper.swift in Sources */,
 				51E9BA571D349DF600CED8A3 /* ParseLoginHelper.swift in Sources */,

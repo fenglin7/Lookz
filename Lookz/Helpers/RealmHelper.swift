@@ -35,10 +35,10 @@ class RealmHelper {
 //        }
     }
     
-//    static func retrieveNotes() -> Results<Note> {
-////        let realm = try! Realm()
-////        return realm.objects(Note).sorted("modificationTime", ascending: false)
-//    }
-//    
+    static func retrieveClothings() -> Results<Clothing> {
+        let realm = try! Realm()
+        return realm.objects(Clothing).sorted("modificationTime", ascending: false)
+    }
+//
     
 }
