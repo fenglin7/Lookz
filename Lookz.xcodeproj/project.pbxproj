@@ -20,6 +20,9 @@
 		51D9CA7C1D3E102800CF5839 /* NSDate+convertToString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D9CA7B1D3E102800CF5839 /* NSDate+convertToString.swift */; };
 		51D9CA7E1D3F4D6900CF5839 /* ClothingItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D9CA7D1D3F4D6900CF5839 /* ClothingItemViewController.swift */; };
 		51D9CA801D3F56B400CF5839 /* LookzCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D9CA7F1D3F56B400CF5839 /* LookzCollectionViewController.swift */; };
+		51D9CA821D3F732900CF5839 /* Look.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D9CA811D3F732900CF5839 /* Look.swift */; };
+		51D9CA841D3F74CC00CF5839 /* GenLookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D9CA831D3F74CC00CF5839 /* GenLookViewController.swift */; };
+		51D9CAA81D42039100CF5839 /* SaveGenLookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D9CAA71D42039100CF5839 /* SaveGenLookViewController.swift */; };
 		51E9BA4C1D349C1600CED8A3 /* PhotoTakingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51E9BA4B1D349C1600CED8A3 /* PhotoTakingViewController.swift */; };
 		51E9BA4F1D349D8600CED8A3 /* WardrobeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51E9BA4E1D349D8600CED8A3 /* WardrobeViewController.swift */; };
 		51E9BA511D349DB000CED8A3 /* LookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51E9BA501D349DB000CED8A3 /* LookViewController.swift */; };
@@ -51,6 +54,9 @@
 		51D9CA7B1D3E102800CF5839 /* NSDate+convertToString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSDate+convertToString.swift"; sourceTree = "<group>"; };
 		51D9CA7D1D3F4D6900CF5839 /* ClothingItemViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClothingItemViewController.swift; sourceTree = "<group>"; };
 		51D9CA7F1D3F56B400CF5839 /* LookzCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LookzCollectionViewController.swift; sourceTree = "<group>"; };
+		51D9CA811D3F732900CF5839 /* Look.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Look.swift; sourceTree = "<group>"; };
+		51D9CA831D3F74CC00CF5839 /* GenLookViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenLookViewController.swift; sourceTree = "<group>"; };
+		51D9CAA71D42039100CF5839 /* SaveGenLookViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SaveGenLookViewController.swift; sourceTree = "<group>"; };
 		51E9BA4B1D349C1600CED8A3 /* PhotoTakingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoTakingViewController.swift; sourceTree = "<group>"; };
 		51E9BA4E1D349D8600CED8A3 /* WardrobeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WardrobeViewController.swift; path = ../WardrobeViewController.swift; sourceTree = "<group>"; };
 		51E9BA501D349DB000CED8A3 /* LookViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LookViewController.swift; path = ../LookViewController.swift; sourceTree = "<group>"; };
@@ -146,6 +152,8 @@
 			children = (
 				51E9BA501D349DB000CED8A3 /* LookViewController.swift */,
 				51D9CA7F1D3F56B400CF5839 /* LookzCollectionViewController.swift */,
+				51D9CA831D3F74CC00CF5839 /* GenLookViewController.swift */,
+				51D9CAA71D42039100CF5839 /* SaveGenLookViewController.swift */,
 			);
 			path = LooksVC;
 			sourceTree = "<group>";
@@ -162,6 +170,7 @@
 			isa = PBXGroup;
 			children = (
 				51E9BA5C1D34ADC600CED8A3 /* Clothing.swift */,
+				51D9CA811D3F732900CF5839 /* Look.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -335,14 +344,17 @@
 				51B5C5401D37A2F40007C57A /* CustomOverlayView.swift in Sources */,
 				51E9BA511D349DB000CED8A3 /* LookViewController.swift in Sources */,
 				51E9BA551D349DF600CED8A3 /* ParseHelper.swift in Sources */,
+				51D9CAA81D42039100CF5839 /* SaveGenLookViewController.swift in Sources */,
 				51E9BA4F1D349D8600CED8A3 /* WardrobeViewController.swift in Sources */,
 				51E9BA4C1D349C1600CED8A3 /* PhotoTakingViewController.swift in Sources */,
 				51C926481D3CAA6F00C638A8 /* AddPhotoViewController.swift in Sources */,
 				51E9BA5B1D34AD6C00CED8A3 /* ClothingTableViewCell.swift in Sources */,
 				51E9BA561D349DF600CED8A3 /* ErrorHandling.swift in Sources */,
+				51D9CA821D3F732900CF5839 /* Look.swift in Sources */,
 				51D9CA7E1D3F4D6900CF5839 /* ClothingItemViewController.swift in Sources */,
 				51E9BA591D349E2B00CED8A3 /* PhotoTakingHelper.swift in Sources */,
 				51E9BA611D351A4D00CED8A3 /* PhotoOverlayViewController.swift in Sources */,
+				51D9CA841D3F74CC00CF5839 /* GenLookViewController.swift in Sources */,
 				51D9CA7C1D3E102800CF5839 /* NSDate+convertToString.swift in Sources */,
 				51D9CA801D3F56B400CF5839 /* LookzCollectionViewController.swift in Sources */,
 				51173C8D1D2E4DAE00700B08 /* AppDelegate.swift in Sources */,

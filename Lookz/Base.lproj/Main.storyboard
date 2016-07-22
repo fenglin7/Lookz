@@ -170,13 +170,55 @@
                     <view key="view" contentMode="scaleToFill" id="0mV-7S-H1n">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mAR-u6-zB5">
+                                <rect key="frame" x="0.0" y="497" width="600" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="oo2-NS-iaT"/>
+                                </constraints>
+                                <state key="normal" title="Generate Look"/>
+                                <connections>
+                                    <action selector="generateLook:" destination="PGE-dH-l62" eventType="touchUpInside" id="c9j-Xd-YsI"/>
+                                    <segue destination="fsT-qD-SLK" kind="show" identifier="generateLook" id="ZJg-aX-w95"/>
+                                </connections>
+                            </button>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="EVW-e3-CJq">
+                                <rect key="frame" x="0.0" y="64" width="600" height="433"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="aQd-mJ-9OH">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="sK6-vj-JjQ">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="mAR-u6-zB5" secondAttribute="trailing" id="GAa-Kg-ls2"/>
+                            <constraint firstAttribute="trailing" secondItem="EVW-e3-CJq" secondAttribute="trailing" id="Mfb-dH-J21"/>
+                            <constraint firstItem="mAR-u6-zB5" firstAttribute="leading" secondItem="0mV-7S-H1n" secondAttribute="leading" id="VEe-uh-o9F"/>
+                            <constraint firstItem="mAR-u6-zB5" firstAttribute="top" secondItem="EVW-e3-CJq" secondAttribute="bottom" id="Y0X-H4-5s9"/>
+                            <constraint firstItem="dFQ-v2-VrO" firstAttribute="top" secondItem="mAR-u6-zB5" secondAttribute="bottom" constant="10" id="mKD-7x-HAK"/>
+                            <constraint firstItem="EVW-e3-CJq" firstAttribute="leading" secondItem="0mV-7S-H1n" secondAttribute="leading" id="nn8-dB-AZl"/>
+                            <constraint firstItem="EVW-e3-CJq" firstAttribute="top" secondItem="ps3-TM-owI" secondAttribute="bottom" id="vHd-o8-zAu"/>
+                        </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Look" image="first" id="Gea-4P-0tp"/>
+                    <navigationItem key="navigationItem" title="Lookz" id="eCP-3o-r3D"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fMI-A2-1bU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="750" y="379"/>
+            <point key="canvasLocation" x="1562" y="379"/>
         </scene>
         <!--PhotoOverlayViewController-->
         <scene sceneID="XPu-Xj-Pkc">
@@ -225,7 +267,7 @@
                             <constraint firstAttribute="trailing" secondItem="8m7-9E-dRR" secondAttribute="trailing" id="uQG-Ry-t3J"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="LookZ" id="Tfg-wT-WDa"/>
+                    <navigationItem key="navigationItem" title="Lookz" id="Tfg-wT-WDa"/>
                     <connections>
                         <outlet property="imageOutput" destination="8m7-9E-dRR" id="ebI-f0-xzS"/>
                         <segue destination="qX4-ZM-kF0" kind="show" identifier="showAddPhotoSegue" id="l0u-8T-qKT"/>
@@ -233,7 +275,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="d4a-Oc-hos" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1562" y="1322"/>
+            <point key="canvasLocation" x="1562" y="1110"/>
         </scene>
         <!--Lookz-->
         <scene sceneID="lay-Uo-kQY">
@@ -321,7 +363,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PhU-KA-ax4" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="d9G-Fu-ziq" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="2305" y="1322"/>
+            <point key="canvasLocation" x="2305" y="1110"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
@@ -335,13 +377,13 @@
                     </tabBar>
                     <connections>
                         <segue destination="NGl-w9-ELg" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
-                        <segue destination="PGE-dH-l62" kind="relationship" relationship="viewControllers" id="GDw-yT-djJ"/>
                         <segue destination="tmO-Ep-ak4" kind="relationship" relationship="viewControllers" id="ceG-HK-O9G"/>
+                        <segue destination="grv-rw-g5g" kind="relationship" relationship="viewControllers" id="GDw-yT-djJ"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="0.0" y="0.0"/>
+            <point key="canvasLocation" x="-70" y="379"/>
         </scene>
         <!--Photo-->
         <scene sceneID="nYy-kW-Q7z">
@@ -360,12 +402,12 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xw9-4c-SWE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="750" y="1322"/>
+            <point key="canvasLocation" x="750" y="1110"/>
         </scene>
-        <!--View Controller-->
+        <!--Gen Look View Controller-->
         <scene sceneID="4a0-yA-ERb">
             <objects>
-                <viewController id="fsT-qD-SLK" sceneMemberID="viewController">
+                <viewController id="fsT-qD-SLK" customClass="GenLookViewController" customModule="Lookz" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Yd3-sg-vby"/>
                         <viewControllerLayoutGuide type="bottom" id="XFy-r5-CTY"/>
@@ -373,12 +415,92 @@
                     <view key="view" contentMode="scaleToFill" id="hVg-7S-HBe">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="IaF-1a-kQl">
+                                <rect key="frame" x="0.0" y="64" width="600" height="487"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6IK-tj-96H">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="443"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kTg-cr-WaJ">
+                                        <rect key="frame" x="278" y="443" width="44" height="44"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="MK7-Fv-dWe"/>
+                                            <constraint firstAttribute="width" constant="44" id="Pad-wb-rBA"/>
+                                        </constraints>
+                                        <state key="normal" title="Like"/>
+                                        <connections>
+                                            <action selector="saveLook:" destination="fsT-qD-SLK" eventType="touchUpInside" id="K2z-Hh-H2c"/>
+                                            <segue destination="gRx-uc-KZL" kind="show" identifier="saveLook" id="zsR-S3-v8M"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="6IK-tj-96H" firstAttribute="top" secondItem="IaF-1a-kQl" secondAttribute="top" id="8ZB-Q7-Erh"/>
+                                    <constraint firstAttribute="trailing" secondItem="6IK-tj-96H" secondAttribute="trailing" id="9pC-6j-ZF2"/>
+                                    <constraint firstItem="6IK-tj-96H" firstAttribute="leading" secondItem="IaF-1a-kQl" secondAttribute="leading" id="MHP-ha-Bt0"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="XFy-r5-CTY" firstAttribute="top" secondItem="IaF-1a-kQl" secondAttribute="bottom" id="78A-nU-wXU"/>
+                            <constraint firstItem="IaF-1a-kQl" firstAttribute="top" secondItem="Yd3-sg-vby" secondAttribute="bottom" id="Pm3-Ri-vVF"/>
+                            <constraint firstItem="IaF-1a-kQl" firstAttribute="leading" secondItem="hVg-7S-HBe" secondAttribute="leading" id="fQE-Zh-gmR"/>
+                            <constraint firstAttribute="trailing" secondItem="IaF-1a-kQl" secondAttribute="trailing" id="zcG-BC-9QR"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="lookImageView" destination="6IK-tj-96H" id="Pvj-gh-23F"/>
+                        <outlet property="saveLook" destination="kTg-cr-WaJ" id="gDm-gF-gVZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SVj-5P-IsY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1562" y="379"/>
+            <point key="canvasLocation" x="2276" y="379"/>
+        </scene>
+        <!--Save Look-->
+        <scene sceneID="isT-ku-Pdy">
+            <objects>
+                <viewController id="gRx-uc-KZL" customClass="SaveGenLookViewController" customModule="Lookz" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="AOX-na-I2W"/>
+                        <viewControllerLayoutGuide type="bottom" id="nqR-lB-fc8"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Fwz-Gk-MNO">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="auV-lB-ZYe">
+                                <rect key="frame" x="0.0" y="67" width="320" height="228"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="fJt-CZ-BUC">
+                                <rect key="frame" x="0.0" y="320" width="320" height="168"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Save Look" id="koe-1q-Cgx">
+                        <barButtonItem key="rightBarButtonItem" title="Save" id="fDw-5k-ltx">
+                            <connections>
+                                <segue destination="N93-Tn-mKs" kind="unwind" identifier="Save" unwindAction="unwindToLookzCollectionViewController:" id="dqi-9i-VQQ"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="lookCaptionTextView" destination="fJt-CZ-BUC" id="ZEh-Yg-43x"/>
+                        <outlet property="lookImageView" destination="auV-lB-ZYe" id="e4h-6C-TIo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="L0R-jz-8ta" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="N93-Tn-mKs" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="2874" y="363"/>
         </scene>
         <!--Wardrobe-->
         <scene sceneID="lCJ-xn-ePt">
@@ -398,6 +520,25 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WqW-Ao-u8f" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="750" y="-348"/>
+        </scene>
+        <!--Lookz-->
+        <scene sceneID="8uD-Ds-L0H">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="grv-rw-g5g" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Lookz" image="first" id="Gea-4P-0tp"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="1QV-EH-SHj">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="PGE-dH-l62" kind="relationship" relationship="rootViewController" id="p71-3H-Rcv"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZXm-He-gh4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="750" y="379"/>
         </scene>
     </scenes>
     <resources>

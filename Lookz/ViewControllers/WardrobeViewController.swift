@@ -89,23 +89,23 @@ class WardrobeViewController: UIViewController, UITableViewDelegate, UITableView
         }
     }
 //
-//    //to come back to list notes
-//    @IBAction func unwindToListNotesViewController(segue: UIStoryboardSegue) {
-//        
-//        // for now, simply defining the method is sufficient.
-//        // we'll add code later
-//        
-//    }
+//    //to come back to Wardrobe
+    @IBAction func unwindToListNotesViewController(segue: UIStoryboardSegue) {
+        
+        // for now, simply defining the method is sufficient.
+        // we'll add code later
+        
+    }
+//
 //    
-//    
-//    //to delete notes
-//    override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath){
-//        if editingStyle == .Delete {
-//            //1
-//            RealmHelper.deleteNote(notes[indexPath.row])
-//            //2
-//            notes = RealmHelper.retrieveNotes()
-//        }
-//    }
+   //to delete clothing
+    func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath){
+        if editingStyle == .Delete {
+            //1
+            RealmHelper.deleteClothing(clothings[indexPath.row])
+            //2
+            clothings = RealmHelper.retrieveClothings()
+        }
+    }
     
 }

@@ -90,5 +90,12 @@ class LookzCollectionViewController: UICollectionViewController {
     
     }
     */
+    
+    @IBAction func unwindToLookzCollectionViewController(segue: UIStoryboardSegue) {
+        
+        // for now, simply defining the method is sufficient.
+        // we'll add code later
+        
+    }
 
 }
